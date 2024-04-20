@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box; /*deixando os elementos dentro do elemento PAI (body)*/
+    width: 100%;
+    background-color: black;
+    color: #f6f6f6;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%; /*o primeiro valor é do superior, o segundo do lado direito, o terceiro é o valor inferior e o quarto é o lado esquero*/
+}
+
+.apresentacao{
+    padding: 5% 15%; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo{
+    width: 50%; /*largura*/
+    display: flex; 
+    flex-direction: column;
+    gap: 40px; /*espaçamento entre cada elemento filho*/
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem; /*tamanho da fonte 1 rem = 16px. No caso, esta em 36px*/
+    font-family: "Krona One", sans-serif;
+}
+
+.titulo-destaque{
+    color: #2395ae;
+}
