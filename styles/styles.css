@@ -18,6 +18,9 @@ body{
 
 .cabecalho{
     padding: 2% 0% 0% 15%; /*o primeiro valor é do superior, o segundo do lado direito, o terceiro é o valor inferior e o quarto é o lado esquero*/
+    font-family: "Krona One", sans-serif;
+    color: #f6f6f6;
+    font-size: 10px;
 }
 
 .apresentacao{
@@ -49,3 +52,53 @@ body{
     list-style: none;
 }
 
+.apresentacao__conteudo_link{
+    display: flex; /* é o elemento pai dos botões. Precisa do display flex*/
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+
+}
+
+
+
+.apresentacao__conteudo_link__subtitulo{
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+
+.apresentacao__conteudo_link__botao {
+    /*background-color: #22D4FD; usado antes*/
+    display: flex;
+    justify-content: center; /*deixando os elementos no centro do botão*/
+    gap: 16px;
+    align-items: center;
+    border: 2px solid var(--cor-terciaria); /*border = tamanho da borda; solid = borda sólida (linha contínua); cor da borda*/
+    color: var(--cor-secundaria);
+    width: 50%;
+    text-align: center; /*alinhando o texto dentro do botao*/
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 5px; /*O primeiro valor é na vertical (cima e embaixo) e o segundo na horizontal (lados)*/
+    text-decoration: none; /*tirando o sublinhado da âncora*/
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+}
+
+.apresentacao__conteudo__imagem{
+    width: 50%;
+    border-radius: 20%;
+}
+
+.rodape{
+    padding: 24px;
+    color: black;
+    background-color: #22D4FD;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
